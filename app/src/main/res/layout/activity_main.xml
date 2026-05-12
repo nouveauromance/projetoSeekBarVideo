@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#535353"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AulaAndroid Tube"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/videologo" />
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <SeekBar
+        android:id="@+id/videoSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:progressTint="#FF0000"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/textTempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00 / 00:00"
+        android:textAlignment="center"
+        android:textColor="#F0F0F0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagePlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="startVideo"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageView
+        android:id="@+id/imagePause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="pauseVideo"
+        app:srcCompat="@android:drawable/ic_media_pause" />
+
+</LinearLayout>
